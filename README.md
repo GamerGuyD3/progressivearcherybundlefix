@@ -1,11 +1,11 @@
-# Progressive Archery: A Minecraft Mod
+# Progressive Archery Bundle Fix
 
+This is a simple Minecraft mod that disables the item and component mixins related to bundles within the Progressive Archery Fabric mod.
 
-![progressivearchery_icon](https://user-images.githubusercontent.com/117603129/234379969-38b4face-04d7-4d01-964d-c999efccd91f.png)
+[Link to Progressive Archery by Solipingen](https://github.com/SolipIngen/minecraft.progressivearchery)
 
-Welcome to Progressive Archery, a mod that reworks almost every aspect to do with archery and ranged combat in Minecraft.
-Please report any technical issues you find here, while I ask you to make content-related feedback on the mod's CurseForge/Modrinth page. 
+### For more information on why I made this mod, [here is the link to the issue.](https://github.com/SolipIngen/minecraft.progressivearchery/issues/83)
 
-This mod is licenced under the MIT License, so feel free to adjust the code according to your own personal tastes. However, I ask all references to the original mod be made back to the mod's CurseForge/Modrinth page, and please refrain from re-uploads with modifications. I also ask you to not distribute your personal adjustments of the mod without due credit to the original author.
+In the words of Solipingen,
 
 May all your aims be true.

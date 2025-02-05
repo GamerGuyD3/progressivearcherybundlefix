@@ -17,17 +17,8 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	// LambDynamicLights integration
-	maven { url "https://api.modrinth.com/maven" }
-
-	// REI integration
-	maven { url "https://maven.shedaniel.me/" }
-
-	// EMI integration
-	maven {
-		name = "TerraformersMC"
-		url = "https://maven.terraformersmc.com/"
-	}
+	// MixinSquared Library
+	maven { url = "https://maven.bawnorton.com/releases" }
 }
 
 loom {
@@ -77,24 +68,8 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	// LambDynamicLights integration
-	modCompileOnly "maven.modrinth:lambdynamiclights:${project.lambdynamiclights_version}"
-
-	// REI integration
-	modApi "dev.architectury:architectury-fabric:${project.architectury_version}"
-	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}") {
-		exclude(group: "net.fabricmc.fabric-api")
-	}
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${project.rei_version}"
-	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
-
-	// EMI integration
-	modCompileOnly "dev.emi:emi-fabric:${project.emi_version}:api"
-	modLocalRuntime "dev.emi:emi-fabric:${project.emi_version}"
+	//MixinSquared Library
+	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.2.0")))
 }
 
 processResources {
